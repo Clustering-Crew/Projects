@@ -12,12 +12,12 @@ DHT dht(DHTPIN, DHT11);
 
 WiFiClient client;
 
-const char *myWriteAPIKey = "UHR91ZZ5KRL2QBD4";
-unsigned long myChannelNumber = 2266425;
+const char *myWriteAPIKey = "";
+unsigned long myChannelNumber = ;
 
  // Decision returns to this channel
-unsigned long returnChannelNumber = 2288225;
-const char *returnReadAPIKey = "025ZCWEFOV7549DG";
+unsigned long returnChannelNumber = ;
+const char *returnReadAPIKey = "";
 
 void setup() {
   // put your setup code here, to run once:
