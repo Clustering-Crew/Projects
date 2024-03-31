@@ -5,10 +5,6 @@
 const char *ssid =  "realme3Pro";  
 const char *pass =  "7603863634";
 
-//const char *ssid =  "Sam";  
-//const char *pass =  "samssree";
-
-
 #define DHTPIN 5            //pin where the dht11 is connected
 #define RELAYPIN 15
 
