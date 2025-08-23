@@ -36,7 +36,7 @@ from training import *
 
 def arg_parser():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--base_path", type=str, help="Base path of the NPY files containing images and labels")
+    parser.add_argument("--base_path", type=str, help="Base path containing the images in the described folder format")
     parser.add_argument("--epochs", type=int, default=100)
     parser.add_argument("--batch", type=int, default=16)
     parser.add_argument("--log_dir", type=str, default="./logs")
@@ -57,7 +57,7 @@ def main(opt):
     # Create the logging dir if not.
     if not os.path.exists(opt.log_dir):
         os.makedirs(opt.log_dir, exist_ok=True)
-    
+
     # Load the NPY files as JAX NUMPY
     train_val_images = jnp.load(os.path.join(opt.base_path, "train_val_data.npy"))
     train_val_labels = jnp.load(os.path.join(opt.base_path, "train_val_labels.npy"))
